@@ -106,22 +106,27 @@ Une balise **a** ne peut pas contenir une balise **button**, j'ai modifié en me
 ```
 
 #### Erreur #5
+```From line 43, column 21; to line 43, column 85```
+La balise name ne peut pas être vide, j'ai donc rempli l'argument avec "password".
 
 #### Erreur #6
+```From line 44, column 42; to line 44, column 53```
+Une balise **a** ne peut pas contenir une balise **button**, j'ai modifié en metant juste une balise **button** avec un **aria-label** 
+```html
+<button class="cn" aria-label="link">Login</button>
+```
 
 #### Erreur #7
+```From line 47, column 50; to line 47, column 53```
+Une balise **p** ne peut contenir une balise **a**, en revenche l'inverse est possible
 
 #### Erreur #8
+```From line 61, column 9; to line 61, column 14```
+C'était une erreur de sémantique la balise n'était associé a aucune autre.
 
 #### Erreur #9
+```From line 62, column 5; to line 62, column 10```
+C'était une erreur de sémantique la balise n'était associé a aucune autre.
 
-
-
-
-
-
-
-
-
-
-
+Après toutes les modifications, on repasse le code html au W3C. Tout est validé.
+![w3c](./asset/w3c.png)
